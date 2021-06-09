@@ -29,13 +29,13 @@
 
 - Matplotlib is a useful library for plotting graphs.
 - To graph something in Python using Matplotlib, there are two lines of code we need:
-- First,
+- The first line is,
 
   ```python
     matplotlib.pyplot.plot(<x axis data>, <y axis data>)
   ```
 
-- Secondly,
+- The second line is,
 
   ```python
     matplotlib.pyplot.show()
@@ -61,6 +61,17 @@
   ```python
       plt.plot(kind='<graph type>', x='<x axis data>', y='<y axis data>')
   ```
+
+#### Known issues with Matplotlib and WSL (Windows Subsystem for Linux)
+
+- There appears to be an issue with Matplotlib and WSL. \
+  More specifically, it seems to have issues with:
+
+      ```python
+           matplotlib.pyplot.show()
+      ```
+
+- Our workaround in 'scatter.py' is to instead save a PNG of the plot in the same directory as 'scatter.py' and open it.
 
 ### 3.2 Visualising Data Acquired from CSV files
 
