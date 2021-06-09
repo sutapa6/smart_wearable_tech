@@ -25,7 +25,44 @@
 
 - blah blah can do later, copy from Project Plan
 
-### Visualising Data Acquired from CSV files
+### 3.1 Matplotlib Library in Python
+
+- Matplotlib is a useful library for plotting graphs.
+- To graph something in Python using Matplotlib, there are two lines of code we need:
+- First,
+
+  ```python
+    matplotlib.pyplot.plot(<x axis data>, <y axis data>)
+  ```
+
+- Secondly,
+
+  ```python
+    matplotlib.pyplot.show()
+  ```
+
+- Since it can be annoying to type out 'matplotlib.pyplot' every time we want to call something from the library we can simply state at the top:
+
+  ```python
+    from matplotlib import pyplot as plt
+  ```
+
+- This means that we can simply write 'plt' wherever we had 'matplotlib.pyplot'
+
+  ```python
+      plt.plot(<x axis data>, <y axis data>)
+      plt.show()
+  ```
+
+- Now if we run the code using our normal command 'python3 <filename>.py', we should have a new window pop up with the graph.
+
+  - Keep in mind the default graph type for matplotlib is a line graph. If we want another type of graph we will have to specify its type as follows:
+
+  ```python
+      plt.plot(kind='<graph type>', x='<x axis data>', y='<y axis data>')
+  ```
+
+### 3.2 Visualising Data Acquired from CSV files
 
 - There exists a file `scatter.py` in **src** which will take a CSV file and output a plot of the data. \
 
