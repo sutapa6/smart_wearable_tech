@@ -1,9 +1,11 @@
 import pandas as pd
-from matplotlib import pyplot as plt
+import matplotlib.pyplot as plt
 import csv
+from PIL import Image
+import os
 
 # The file to be graphed
-filename = 'scope_0.csv'
+filename = 'scope_2.csv'
 
 # Formats CSV file in a way matplotlib can plot
 
@@ -22,6 +24,9 @@ def csv_format(filename):
 
     # 3 Change Scientific Notation to decimal
     for row in lines:
+        if row[0] == '' and row[1] == '' and row[2] == '':
+            del row
+
         if row[0] != "x_axis":
             row[0] = float(row[0])
 
@@ -41,4 +46,12 @@ def csv_format(filename):
 csv_format(filename)
 df = pd.read_csv(filename)
 df.plot(kind='scatter', x='x_axis', y='channel_2')  # scatter plot
-plt.show()  # Display the plot
+# plt.show() should display the plot, but wsl hates it
+# instead, generate the plot as a png and save it in the current directory
+image_name = filename.replace(".csv", ".png")
+plt.savefig(image_name, dpi=1200)
+
+# Open the image of the plot
+cwd = os.getcwd()
+image = Image.open(f"{cwd}/{image_name}")
+image.show()
