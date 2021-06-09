@@ -67,11 +67,11 @@
 - There appears to be an issue with Matplotlib and WSL. \
   More specifically, it seems to have issues with:
 
-      ```python
-           matplotlib.pyplot.show()
-      ```
+  ```python
+      matplotlib.pyplot.show()
+  ```
 
-- Our workaround in 'scatter.py' is to instead save a PNG of the plot in the same directory as 'scatter.py' and open it.
+- Our workaround in `scatter.py` is to instead save a PNG of the plot in the same directory as `scatter.py` and open it.
 
 ### 3.2 Visualising Data Acquired from CSV files
 
