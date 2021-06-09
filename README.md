@@ -74,11 +74,11 @@
 
 ### 3.2 Visualising Data Acquired from CSV files
 
-### 3.2.1 Formatting the CSV files
+#### 3.2.1 Formatting the CSV files
 
 - We need to format the CSV files in such a way matplotlib will be able to plot.
 
-#### Original Format of CSV files from oscilloscope
+##### Original Format of CSV files from oscilloscope
 
 ```csv
     x-axis,2,4
@@ -91,7 +91,7 @@
     ...
 ```
 
-#### Modified Format of CSV files from oscilloscope
+##### Modified Format of CSV files from oscilloscope
 
 ```csv
     x_axis,channel_2,channel_4
@@ -102,6 +102,8 @@
     -4.9890625,0.08850,-0.00
     ...
 ```
+
+#### 3.2.1 Plotting the Data from the CSV Files
 
 - There exists a file `scatter.py` in **src** which will take a CSV file and output a plot of the data.
 
