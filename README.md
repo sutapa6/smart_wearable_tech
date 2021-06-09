@@ -25,6 +25,14 @@
 
 - blah blah can do later, copy from Project Plan
 
+### Visualising Data Acquired from CSV files
+
+- There exists a file `scatter.py` in **src** which will take a CSV file and output a plot of the data. \
+  This will also save a high-quality png into the same directory as the 'scatter.py' file. This plot is generated \
+  from the matplotlib library and looks like the plot below
+
+![](scope_0.png)
+
 ## 4. Data Cleaning
 
 blah blah can do later, copy from Project Plan
