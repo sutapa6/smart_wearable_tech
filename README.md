@@ -25,8 +25,6 @@
 
 ## 3. Data Acquisiton
 
-- blah blah can do later, copy from Project Plan
-
 ### 3.1 Matplotlib Library in Python
 
 - Matplotlib is a useful library for plotting graphs.
@@ -76,6 +74,22 @@
 
 ### 3.2 Visualising Data Acquired from CSV files
 
+### 3.2.1 Formatting the CSV files
+
+- We need to format the CSV files in such a way matplotlib will be able to plot.
+
+#### Original Format of CSV files from oscilloscope
+
+```csv
+    x-axis,2,4
+    Volt,second,second
+    -4.9921875,0.09051,-0.00
+    -4.9914063,0.08046,-0.002
+    -4.990625,0.09252,-0.00
+    -4.9898438,0.09654,-0.0024
+    -4.9890625,0.08850,-0.00
+```
+
 - There exists a file `scatter.py` in **src** which will take a CSV file and output a plot of the data.
 
   ```python
@@ -94,3 +108,7 @@ blah blah can do later, copy from Project Plan
 ## 5. Data Analysis
 
 blah blah can do later, copy from Project Plan
+
+## 6. Database
+
+blah blah will be a future thing
