@@ -64,8 +64,7 @@
 
 #### Known issues with Matplotlib and WSL (Windows Subsystem for Linux)
 
-- There appears to be an issue with Matplotlib and WSL. \
-  More specifically, it seems to have issues with:
+- There appears to be an issue with Matplotlib and WSL. More specifically, it seems to have issues with:
 
   ```python
       matplotlib.pyplot.show()
