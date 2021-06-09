@@ -1,5 +1,7 @@
 # Smart Wearable Tech Software
 
+**🐍 Chunder's Crew 🐍**
+
 ## Contents
 
 1. Aims
@@ -62,7 +64,7 @@
       plt.plot(kind='<graph type>', x='<x axis data>', y='<y axis data>')
   ```
 
-#### Known issues with Matplotlib and WSL (Windows Subsystem for Linux)
+#### 3.1.1 Known issues with Matplotlib and WSL (Windows Subsystem for Linux)
 
 - There appears to be an issue with Matplotlib and WSL. More specifically, it seems to have issues with:
 
@@ -74,7 +76,7 @@
 
 ### 3.2 Visualising Data Acquired from CSV files
 
-- There exists a file `scatter.py` in **src** which will take a CSV file and output a plot of the data. \
+- There exists a file `scatter.py` in **src** which will take a CSV file and output a plot of the data.
 
   ```python
       filename = 'scope_0.csv' # CSV file to be plotted
