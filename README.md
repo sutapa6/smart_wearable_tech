@@ -28,6 +28,11 @@
 ### Visualising Data Acquired from CSV files
 
 - There exists a file `scatter.py` in **src** which will take a CSV file and output a plot of the data. \
+
+  ```python
+      filename = 'scope_0.csv' # CSV file to be plotted
+  ```
+
   This will also save a high-quality png into the same directory as the 'scatter.py' file. This plot is generated \
   from the matplotlib library and looks like the plot below
 
