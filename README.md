@@ -11,7 +11,7 @@
 
 ## 0. Change Log
 
-\*09/06 Added General overview of the project
+- 09/06 Added General overview of the project
 
 ## 1. Aims:
 
