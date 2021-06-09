@@ -31,7 +31,7 @@
   This will also save a high-quality png into the same directory as the 'scatter.py' file. This plot is generated \
   from the matplotlib library and looks like the plot below
 
-![](scope_0.png)
+![](scope_0.png =100x20)
 
 ## 4. Data Cleaning
 
