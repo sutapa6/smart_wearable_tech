@@ -88,6 +88,19 @@
     -4.990625,0.09252,-0.00
     -4.9898438,0.09654,-0.0024
     -4.9890625,0.08850,-0.00
+    ...
+```
+
+#### Modified Format of CSV files from oscilloscope
+
+```csv
+    x_axis,channel_2,channel_4
+    -4.9921875,0.09051,-0.00
+    -4.9914063,0.08046,-0.002
+    -4.990625,0.09252,-0.00
+    -4.9898438,0.09654,-0.0024
+    -4.9890625,0.08850,-0.00
+    ...
 ```
 
 - There exists a file `scatter.py` in **src** which will take a CSV file and output a plot of the data.
