@@ -116,6 +116,14 @@
 
 ![](scope_0.png)
 
+### 3.3 Fast Fourier Transform (FFT)
+
+- Add any research on what FFT's are, why they are useful and how to implement them using python.
+
+```python
+      # Insert Python code for FFT's
+```
+
 ## 4. Data Cleaning
 
 blah blah can do later, copy from Project Plan
