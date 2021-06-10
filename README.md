@@ -116,6 +116,10 @@
 
 ![](scope_0.png)
 
+A line graph version of the same data can be seen below
+
+![](line_scope_0.png)
+
 ### 3.3 Fast Fourier Transform (FFT)
 
 - Add any research on what FFT's are, why they are useful and how to implement them using python.

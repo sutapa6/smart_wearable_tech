@@ -5,7 +5,7 @@ from PIL import Image
 import os
 
 # The file to be graphed
-filename = 'scope_0.csv'
+filename = 'data/scope_3.csv'
 
 # Formats CSV file in a way matplotlib can plot
 
