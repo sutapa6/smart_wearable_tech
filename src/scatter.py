@@ -5,7 +5,7 @@ from PIL import Image
 import os
 
 # The file to be graphed
-filename = 'data/scope_3.csv'
+filename = 'data/scope_0.csv'
 
 # Formats CSV file in a way matplotlib can plot
 
@@ -49,6 +49,7 @@ df.plot(kind='scatter', x='x_axis', y='channel_2')  # scatter plot
 # plt.show() should display the plot, but wsl hates it
 # instead, generate the plot as a png and save it in the current directory
 image_name = filename.replace(".csv", ".png")
+image_name = image_name.replace("data/", "")
 plt.savefig(image_name, dpi=1200)
 
 # Open the image of the plot
