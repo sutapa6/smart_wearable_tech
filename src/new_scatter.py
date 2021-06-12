@@ -1,3 +1,6 @@
+# This updated scatter.py file is to format CSV files from Lab_2, which only
+# contain two columns (x axis and channel_2)
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import csv
