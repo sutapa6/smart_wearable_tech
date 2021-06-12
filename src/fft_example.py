@@ -1,3 +1,4 @@
+# An example of how a fft works using a sum of sine waves with added noise
 # To add a new cell, type '# %%'
 # To add a new markdown cell, type '# %% [markdown]'
 # %%
@@ -25,9 +26,9 @@ plt.show()
 # Compute the Fast Fourier Transform (FFT)
 
 n = len(t)
-fhat = np.fft.fft(f, n)
-PSD = fhat * np.conj(fhat)/n
-freq = (1/(dt*n)) * np.arange(n)
+fhat = np.fft.fft(f, n)  # Compute the FFT
+PSD = fhat * np.conj(fhat)/n  # Power spectrum
+freq = (1/(dt*n)) * np.arange(n)  # x axis of frequencies
 L = np.arange(1, np.floor(n/2), dtype='int')
 
 fig, axs = plt.subplots(2, 1)
@@ -74,7 +75,7 @@ plt.plot(freq[L], PSDclean[L], color='k', LineWidth=1.5, label="Filtered")
 plt.xlim(freq[L[0]], freq[L[-1]])
 plt.legend()
 
-plt.show
+plt.show()
 
 
 # %%
