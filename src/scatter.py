@@ -5,7 +5,7 @@ from PIL import Image
 import os
 
 # The file to be graphed
-filename = 'data/scope_0.csv'
+filename = 'data/scope_1.csv'
 
 # Formats CSV file in a way matplotlib can plot
 
@@ -20,7 +20,7 @@ def csv_format(filename):
     lines[0][2] = 'channel_4'
 
     # 2) Remove second row (second, volt, volt)
-    del lines[1]
+    del lines[1:12]
 
     # 3 Change Scientific Notation to decimal
     for row in lines:
@@ -50,7 +50,7 @@ df.plot(kind='scatter', x='x_axis', y='channel_2')  # scatter plot
 # instead, generate the plot as a png and save it in the current directory
 image_name = filename.replace(".csv", ".png")
 image_name = image_name.replace("data/", "")
-plt.savefig(image_name, dpi=1200)
+plt.savefig(image_name, dpi=300)
 
 # Open the image of the plot
 cwd = os.getcwd()
