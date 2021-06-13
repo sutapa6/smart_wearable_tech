@@ -202,7 +202,7 @@ will have to do later but this is just random code on how to start a table. enjo
     <td>
       <b>InputError</b> when any of:
       <ul>
-        <li>Filename entered is not a valid filename is not a valid file</li>
+        <li>Filename entered is not a valid file</li>
       </ul>
     </td>
   </tr>
