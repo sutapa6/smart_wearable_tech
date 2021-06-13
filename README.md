@@ -10,6 +10,7 @@
 4. Data Cleaning
 5. Data Analysis
 6. Database
+7. Functions list
 
 ## 0. Change Log
 
@@ -165,3 +166,17 @@ blah blah can do later, copy from Project Plan
 
 - The testing team will utilise their testing setup to acquire repetitions of sensor data for each of the codewords in the NPA. This data will be handed to the software team for processing, with the accumulation of processed data establishing a unique profile for corresponding codewords.
   - Subsequently, new signals acquired by the sensor will be subjected to a probability match against the codeword profiles to determine exactly which codeword was spoken, and hence produce an appropriate speech output.
+
+## 7. Functions list
+  
+### 7.1 About
+  
+- The functions list will allow the team to have to brief understanding of what each function is supposed to do and the expected input and output values that the function must contain in order for other functions to work as they should.
+
+### 7.2 Functions
+  will have to do later but this is just random code on how to start a table. enjoy :)
+  | Stretch/Untouched | ProbDistribution | Accuracy |
+  | --- | --- | --- |
+  | Stretched | Gaussian | .843 |
+  
+  link to google doc just in case this table thing does not work out: https://docs.google.com/document/d/1SIq7Kt2bmYPdOGgqtmAKAjPw-a_mt3PVh_RuykiMsfY/edit
