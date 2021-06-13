@@ -42,7 +42,7 @@ def csv_format(filename: str):
             row[1] = float(row[1])
 
     # Writes new formatted csv to the file, ready for plotting
-    writer = csv.writer(open(file_path, 'w'))
+    writer = csv.writer(open(filename, 'w'))
     writer.writerows(lines)
 
     pass
