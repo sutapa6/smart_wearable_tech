@@ -16,14 +16,21 @@
 
 - 09/06 Added General overview of the project
 - 13/06 Fast Fourier Transform information added, csv files moved to `data` directory with subdirectories corresponding to which set the data came from
+- 14/06 Added material from 21T2 Project Plan
 
 ## 1. Aims:
 
-- Using the Data acquired from the labs, analyse the data and output a matching output to a spoken input
+- The sensor and software package will be designed to analyse vocalisations of the NATO phonetic alphabet, rather than the entirely of the English language.
 
 ## 2. Overview
 
-- blah blah can do later, copy from Project Plan
+- Our team was tasked with the creation of a smart wearable sensor which converts throat vibrations into sound. Term 1 was largely dominated by research and laboratory work which, despite a delayed start, yielded promising sensor responses to both mechanical and vocal vibrations. Nonetheless, when subjected to controlled vibrations, the sensor produced increasingly noisy output at high frequencies (>100 Hz), resulting in a deteriorated signal-to-noise ratio (SNR) and data which was difficult to analyse.
+
+- In 21T2, the team will be obtaining different types of sensors (piezoresistive, piezoelectric, capacitive) to assess their sensitivity, the effect of varying frequencies on the SNR, and power consumption. Currently, a Pt coated PDMS Piezoresistive Sensor shows promise in laboratory tests as it produces larger signals, implying it is more sensitive than previous sensors. However, increases sensitivity consequently leads to amplified noise produced by breathing, head movements and swallowing. Research is being conducted into utilizing software to apply a Fast Fourier Transform to denoise these signals, and preliminary work is generating denoised data for more detailed analysis.
+
+- The aforementioned software has been implemented with Python, which has been chosen over MATLAB for its greater flexibility and familiarity. Python will be used to denoise signals and construct a comparative analysis algorithm to compare incoming sensor signals with a calibrated databank of select words.
+
+- The team will now design tests to determine the optimal sensor placement for ample sensitivity and comfort, with repetitions for each type of sensor provided. Software development will focus on removing noise produced by breathing, head movements and swallowing, and research into comparative analysis techniques.
 
 ## 3. Data Acquisiton
 
@@ -198,7 +205,7 @@ will have to do later but this is just random code on how to start a table. enjo
   </tr>
   <tr>
     <td><code>csv_format</code><br /><br />Given a CSV filename, format the CSV in a way Matplotlib can plot.</td>
-    <td><b>Parameters:</b><br /><code>(filename)</code><br /><br /><b>Return Type:</b><br /><code>None<code></td>
+    <td><b>Parameters:</b><br /><code>filename</code><br /><br /><b>Return Type:</b><br /><code>None<code></td>
     <td>
       <b>InputError</b> when any of:
       <ul>
