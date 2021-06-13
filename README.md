@@ -14,6 +14,7 @@
 ## 0. Change Log
 
 - 09/06 Added General overview of the project
+- 13/06 Fast Fourier Transform information added, csv files moved to `data` directory with subdirectories corresponding to which set the data came from 
 
 ## 1. Aims:
 
