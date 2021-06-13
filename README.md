@@ -19,7 +19,7 @@
 
 - Using the Data acquired from the labs, analyse the data and output a matching output to a spoken input
 
-## 2.Overview
+## 2. Overview
 
 - blah blah can do later, copy from Project Plan
 
@@ -114,23 +114,31 @@
   This will also save a high-quality png into the same directory as the 'scatter.py' file. This plot is generated \
   from the matplotlib library and looks like the plot below
 
-![](scope_0.png)
+![](docs/scope_0.png)
 
 A line graph version of the same data can be seen below
 
-![](line_scope_0.png)
-
-### 3.3 Fast Fourier Transform (FFT)
-
-- Add any research on what FFT's are, why they are useful and how to implement them using python.
-
-```python
-      # Insert Python code for FFT's
-```
+![](docs/line_scope_0.png)
 
 ## 4. Data Cleaning
 
 blah blah can do later, copy from Project Plan
+
+### 4.1 Fast Fourier Transform (FFT)
+
+- In layman's terms, the Fourier Transform is a mathematical operation that changes the domain (x-axis) of a signal from time to frequency
+
+- Fast Fourier Transforms are a way to clean up our data and reduce the amount of noise present in out plots.
+
+- The maths involved in an FFT is quie complex, and is left as an exercise to the reader
+
+#### 4.1.1 Implementing FFT using Python
+
+- Located in `src` is a file called `fft_example.py`. This file takes any of the csv files obtained from the labs and outputs a plot of the original function, its FFT and an inverse FFT with reduced noise. An example is shown below.
+
+![](docs/fft_sample.png)
+
+- However, it is in fact much easier to use the file `fft.ipynb` located in the `smart_wearable_tech` directory. This is a Jupyter Notebook, allowing for the division of code into small cells which can be individually run and debugged accordingly.
 
 ## 5. Data Analysis
 
@@ -138,4 +146,21 @@ blah blah can do later, copy from Project Plan
 
 ## 6. Database
 
-blah blah will be a future thing
+### 6.1 Establishing a Word Bank
+
+- At the commencement of this project, the team aimed to deliver a package which would detect and analyse any vocal vibrations, and consequently produce a corresponding text output.
+
+- This scope has since been reduced due to the complex and irregular nature of the English lexicon; rather than documenting every phoneme of the spoken English language, we will focus on a select assortment of words. More specifically, the package will be designed to process the NATO Phonetic Alphabet.
+
+#### 6.1.1 NATO Phonetic Alphabet (NPA)
+
+- The NATO Phonetic Alphabet is the established phonetic alphabet for all military, civilian and amateur radio communications. It contains 26 words, substituting a unique codeword for each letter of the alphabet:
+
+<p allign='center'>
+  <em>Alfa, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whiskey, X-Ray, Yankee, Zulu. </em>
+</p>
+
+- Each codeword in the NPA was chosen to sound distinct from each other, and incorporates sounds common to English, French, and Spanish.
+
+- The testing team will utilise their testing setup to acquire repetitions of sensor data for each of the codewords in the NPA. This data will be handed to the software team for processing, with the accumulation of processed data establishing a unique profile for corresponding codewords.
+  - Subsequently, new signals acquired by the sensor will be subjected to a probability match against the codeword profiles to determine exactly which codeword was spoken, and hence produce an appropriate speech output.
