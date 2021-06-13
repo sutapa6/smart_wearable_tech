@@ -15,7 +15,7 @@
 ## 0. Change Log
 
 - 09/06 Added General overview of the project
-- 13/06 Fast Fourier Transform information added, csv files moved to `data` directory with subdirectories corresponding to which set the data came from 
+- 13/06 Fast Fourier Transform information added, csv files moved to `data` directory with subdirectories corresponding to which set the data came from
 
 ## 1. Aims:
 
@@ -167,16 +167,46 @@ blah blah can do later, copy from Project Plan
 - The testing team will utilise their testing setup to acquire repetitions of sensor data for each of the codewords in the NPA. This data will be handed to the software team for processing, with the accumulation of processed data establishing a unique profile for corresponding codewords.
   - Subsequently, new signals acquired by the sensor will be subjected to a probability match against the codeword profiles to determine exactly which codeword was spoken, and hence produce an appropriate speech output.
 
-## 7. Functions list
-  
+## 7. Interface Specifications
+
 ### 7.1 About
-  
+
 - The functions list will allow the team to have to brief understanding of what each function is supposed to do and the expected input and output values that the function must contain in order for other functions to work as they should.
 
-### 7.2 Functions
-  will have to do later but this is just random code on how to start a table. enjoy :)
-  | Stretch/Untouched | ProbDistribution | Accuracy |
-  | --- | --- | --- |
-  | Stretched | Gaussian | .843 |
-  
-  link to google doc just in case this table thing does not work out: https://docs.google.com/document/d/1SIq7Kt2bmYPdOGgqtmAKAjPw-a_mt3PVh_RuykiMsfY/edit
+### 7.2 Data types
+
+<table>
+  <tr>
+    <th>Variable name</th>
+    <th>Type</th>
+  </tr>
+  <tr>
+    <td><b>filename</b></td>
+    <td>string</td>
+  </tr>
+</table>
+
+### 7.3 Functions
+
+will have to do later but this is just random code on how to start a table. enjoy :)
+
+  <table>
+  <tr>
+    <th>Name & Description</th>
+    <th>Data Types</th>
+    <th>Exceptions</th>
+  </tr>
+  <tr>
+    <td><code>csv_format</code><br /><br />Given a CSV filename, format the CSV in a way Matplotlib can plot.</td>
+    <td><b>Parameters:</b><br /><code>(filename)</code><br /><br /><b>Return Type:</b><br /><code>None<code></td>
+    <td>
+      <b>InputError</b> when any of:
+      <ul>
+        <li>Filename entered is not a valid filename is not a valid file</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+  </table>
+
+link to google doc just in case this table thing does not work out: https://docs.google.com/document/d/1SIq7Kt2bmYPdOGgqtmAKAjPw-a_mt3PVh_RuykiMsfY/edit
