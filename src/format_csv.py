@@ -2,8 +2,25 @@ import os
 import csv
 
 
-def csv_format(file_path: str):
-    r = csv.reader(open(file_path))
+def csv_format(filename: str):
+    '''
+        Takes a csv file and formats it in such a way that can be 
+        plotted using the matplotlib library. Essentially, this is changing 
+        each header to not include hyphens (such as x-axis) or plain integers
+        It also deletes any rows with empty values 
+
+        Arguments:
+            filename (str)    - name of the csv file to be plotted
+
+        Exceptions:
+            InputError  - Occurs when   1) filename is not a string
+                                        2) filename does not exist
+                                        3) filename is not a csv file
+
+        Return Value:
+            None 
+    '''
+    r = csv.reader(open(filename))
     lines = list(r)
 
     # 1) Convert header to names that matplotlib will like
