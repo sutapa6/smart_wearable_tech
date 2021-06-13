@@ -10,12 +10,11 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from data import scope_0
 
 plt.rcParams['figure.figsize'] = [20, 10]
 plt.rcParams.update({'font.size': 18})
 
-df = pd.read_csv(scope_0, delimiter=',', skiprows=0)
+df = pd.read_csv('data/Lab_2/scope_0.csv', delimiter=',', skiprows=0)
 
 # Create a simple signal with two frequencies
 dt = 1
@@ -26,7 +25,7 @@ plt.plot(t, f, LineWidth=1, label="Clean")
 plt.legend()
 
 
-    # %%
+# %%
 # Compute the Fast Fourier Transform (FFT)
 
 n = len(t)
