@@ -14,8 +14,29 @@ scope_num = 10
 lab_num = 2
 data = f'data/Lab_{lab_num}/scope_{scope_num}.csv'
 
+''' There are two ways we can define the plotting functions
+    1) def plot(filename)
+    2) def plot (lab_num, scope_num)
+
+'''
+
 
 def line_plot(data):
+    '''
+        Takes a csv file and plots a line graph based off the data given. It then 
+        saves this file under data/Plots/Lab_{lab_num}/scope_{scope_num}.png
+
+        Arguments:
+            filename (str)    - name of the csv file to be plotted
+
+        Exceptions:
+            InputError  - Occurs when   1) filename is not a string
+                                        2) filename does not exist
+                                        3) filename is not a csv file
+
+        Return Value:
+            None 
+    '''
     df = pd.read_csv(data, delimiter=',', skiprows=0)
     csv_format(data)
     dt = 1
@@ -28,7 +49,7 @@ def line_plot(data):
     plt.legend()
 
     # save raw scope as png in data/plots
-    image_path = f'data/Plots/Lab_{lab_num}/scope_{scope_num}.png'
+    image_path = f'data/Plots/Lab_{lab_num}/Line_plots/scope_{scope_num}.png'
     plt.savefig(image_path, dpi=300, bbox_inches='tight', transparent=False)
 
     plt.show()
@@ -37,6 +58,20 @@ def line_plot(data):
 
 
 def fft_plot(data):
+    '''
+        Takes a csv file and plots a the FFT of the data given. 
+
+        Arguments:
+            filename (str)    - name of the csv file toe be plotted
+
+        Exceptions:
+            InputError  - Occurs when   1) filename is not a string
+                                        2) filename does not exist
+                                        3) filename is not a csv file
+
+        Return Value:
+            None 
+    '''
     df = pd.read_csv(data, delimiter=',', skiprows=0)
     csv_format(data)
     dt = 1
@@ -69,6 +104,21 @@ def fft_plot(data):
 
 
 def fft_comparison_plot(data):
+    '''
+        Takes a csv file and plots a line graph, the FFT and the resulting inverse FFT
+        of the data given. It then saves this file under data/Plots/FFT_comparison_plots/Lab_{lab_num}/scope_{scope_num}.png
+
+        Arguments:
+            filename (str)    - name of the csv file to be plotted
+
+        Exceptions:
+            InputError  - Occurs when   1) filename is not a string
+                                        2) filename does not exist
+                                        3) filename is not a csv file
+
+        Return Value:
+            None 
+    '''
     df = pd.read_csv(data, delimiter=',', skiprows=0)
     csv_format(data)
     dt = 1
