@@ -15,7 +15,7 @@
 ## 0. Change Log
 
 - 09/06 Added General overview of the project
-- 13/06 Fast Fourier Transform information added, csv files moved to `data` directory with subdirectories corresponding to which set the data came from
+- 13/06 Fast Fourier Transform information added, csv files moved to `data` directory with subdirectories corresponding to which set the data came from, support for importing added
 - 14/06 Added material from 21T2 Project Plan
 
 ## 1. Aims:
@@ -79,7 +79,7 @@
       matplotlib.pyplot.show()
   ```
 
-- Our workaround in `scatter.py` is to instead save a PNG of the plot in the same directory as `scatter.py` and open it.
+- Our initial workaround in `scatter.py` is to instead save a PNG of the plot in the same directory as `scatter.py` and open it. It has since been discovered that executing the Python code in a Jupyter notebook allows for dynamic production of figures in VSCode.
 
 ### 3.2 Visualising Data Acquired from CSV files
 
@@ -114,18 +114,21 @@
 
 #### 3.2.1 Plotting the Data from the CSV Files
 
-- There exists a file `scatter.py` in **src** which will take a CSV file and output a plot of the data.
+- There exists a file `plot.py` in **src** which contains several functions for plotting both raw csv data, cleaned csv data, and their Fast Fourier Transform (FFT).
 
   ```python
-      filename = 'scope_0.csv' # CSV file to be plotted
+      scope_num = 0
+      lab_num = 1
+      data = f'data/Lab_{lab_num}/scope_{scope_num}.csv' # path to the csv file to be plotted
   ```
 
+  By changing the values of 'scope_num' and 'lab_num', specific csv files can be accessed and coresponding plots can be generated within a Jupyter notebook.
   This will also save a high-quality png into the same directory as the 'scatter.py' file. This plot is generated \
   from the matplotlib library and looks like the plot below
 
 ![](docs/scope_0.png)
 
-A line graph version of the same data can be seen below
+A line graph version of the same data can be seen below:
 
 ![](docs/line_scope_0.png)
 
