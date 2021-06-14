@@ -14,14 +14,13 @@ scope_num = 10
 lab_num = 2
 data = f'data/Lab_{lab_num}/scope_{scope_num}.csv'
 
-csv_format(data)
-df = pd.read_csv(data, delimiter=',', skiprows=0)
-dt = 1
-t = df['x_axis']
-f = df['channel_2']
-
 
 def line_plot(data):
+    df = pd.read_csv(data, delimiter=',', skiprows=0)
+    csv_format(data)
+    dt = 1
+    t = df['x_axis']
+    f = df['channel_2']
     # Plot a line graph from the data
     plt.plot(t, f, LineWidth=1, label="scope_0 raw")
     plt.xlabel('Time (s)')
@@ -38,6 +37,11 @@ def line_plot(data):
 
 
 def fft_plot(data):
+    df = pd.read_csv(data, delimiter=',', skiprows=0)
+    csv_format(data)
+    dt = 1
+    t = df['x_axis']
+    f = df['channel_2']
 
     n = len(t)
     fhat = np.fft.fft(f, n)
@@ -65,6 +69,11 @@ def fft_plot(data):
 
 
 def fft_comparison_plot(data):
+    df = pd.read_csv(data, delimiter=',', skiprows=0)
+    csv_format(data)
+    dt = 1
+    t = df['x_axis']
+    f = df['channel_2']
 
     n = len(t)
     fhat = np.fft.fft(f, n)
