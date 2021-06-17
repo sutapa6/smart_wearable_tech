@@ -208,7 +208,6 @@ will have to do later but this is just random code on how to start a table. enjo
   </tr>
   <tr>
     <td><code>csv_format</code><br /><br />Given a CSV filename, format the CSV in a way Matplotlib can plot.</td>
-    <td><code>
     <td><b>Parameters:</b><br /><code>filename</code><br /><br /><b>Return Type:</b><br /><code>None<code></td>
     <td>
       <b>InputError</b> when any of:
@@ -220,7 +219,6 @@ will have to do later but this is just random code on how to start a table. enjo
   <tr>
      <td><code>line_plot</code><br /><br />Takes a csv file and plots a line graph based off the data given. It then 
     saves this file under data/Plots/Lab_{lab_num}/scope_{scope_num}.png</td>
-    <td><code>
     <td><b>Parameters:</b><br /><code>filename</code><br /><br /><b>Return Type:</b><br /><code>None<code></td>
     <td>
       <b>InputError</b> when any of:
@@ -231,7 +229,6 @@ will have to do later but this is just random code on how to start a table. enjo
   </tr>
   <tr>
      <td><code>fft_plot</code><br /><br />Takes a csv file and plots a the FFT of the data given. </td>
-    <td><code>
     <td><b>Parameters:</b><br /><code>filename</code><br /><br /><b>Return Type:</b><br /><code>None<code></td>
     <td>
       <b>InputError</b> when any of:
@@ -242,7 +239,6 @@ will have to do later but this is just random code on how to start a table. enjo
   </tr>
    <tr>
      <td><code>fft_comparison_plot</code><br /><br />Takes a csv file and plots a line graph, the FFT and the resulting inverse FFT.of the data given. It then saves this file under data/Plots/FFT_comparison_plots/Lab_{lab_num}/scope_{scope_num}.png. </td>
-    <td><code>
     <td><b>Parameters:</b><br /><code>filename</code><br /><br /><b>Return Type:</b><br /><code>None<code></td>
     <td>
       <b>InputError</b> when any of:
