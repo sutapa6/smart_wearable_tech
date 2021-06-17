@@ -12,7 +12,7 @@ plt.rcParams.update({'font.size': 18})
 # give path to data
 scope_num = 10
 lab_num = 2
-data = f'data/Lab_{lab_num}/scope_{scope_num}.csv'
+filename = f'data/Lab_{lab_num}/scope_{scope_num}.csv'
 
 ''' There are two ways we can define the plotting functions
     1) def plot(filename)
@@ -21,7 +21,7 @@ data = f'data/Lab_{lab_num}/scope_{scope_num}.csv'
 '''
 
 
-def line_plot(data):
+def line_plot(filename):
     '''
         Takes a csv file and plots a line graph based off the data given. It then 
         saves this file under data/Plots/Lab_{lab_num}/scope_{scope_num}.png
@@ -37,8 +37,8 @@ def line_plot(data):
         Return Value:
             None 
     '''
-    df = pd.read_csv(data, delimiter=',', skiprows=0)
-    csv_format(data)
+    df = pd.read_csv(filename, delimiter=',', skiprows=0)
+    csv_format(filename)
     dt = 1
     t = df['x_axis']
     f = df['channel_2']
@@ -49,7 +49,8 @@ def line_plot(data):
     plt.legend()
 
     # save raw scope as png in data/plots
-    image_path = f'data/Plots/Lab_{lab_num}/Line_plots/scope_{scope_num}.png'
+    image_name = filename.replace("csv", "png")
+    image_path = f'{image_name}'
     plt.savefig(image_path, dpi=300, bbox_inches='tight', transparent=False)
 
     plt.show()
@@ -57,7 +58,7 @@ def line_plot(data):
     pass
 
 
-def fft_plot(data):
+def fft_plot(filename):
     '''
         Takes a csv file and plots a the FFT of the data given. 
 
@@ -72,8 +73,8 @@ def fft_plot(data):
         Return Value:
             None 
     '''
-    df = pd.read_csv(data, delimiter=',', skiprows=0)
-    csv_format(data)
+    df = pd.read_csv(filename, delimiter=',', skiprows=0)
+    csv_format(filename)
     dt = 1
     t = df['x_axis']
     f = df['channel_2']
@@ -103,7 +104,7 @@ def fft_plot(data):
     pass
 
 
-def fft_comparison_plot(data):
+def fft_comparison_plot(filename):
     '''
         Takes a csv file and plots a line graph, the FFT and the resulting inverse FFT
         of the data given. It then saves this file under data/Plots/FFT_comparison_plots/Lab_{lab_num}/scope_{scope_num}.png
@@ -119,8 +120,8 @@ def fft_comparison_plot(data):
         Return Value:
             None 
     '''
-    df = pd.read_csv(data, delimiter=',', skiprows=0)
-    csv_format(data)
+    df = pd.read_csv(filename, delimiter=',', skiprows=0)
+    csv_format(filename)
     dt = 1
     t = df['x_axis']
     f = df['channel_2']
@@ -168,12 +169,12 @@ if __name__ == "__main__":
     lab_num = 2
     data = f'data/Lab_{lab_num}/scope_{scope_num}.csv'
 
-    csv_format(data)
-    df = pd.read_csv(data, delimiter=',', skiprows=0)
+    csv_format(filename)
+    df = pd.read_csv(filename, delimiter=',', skiprows=0)
     dt = 1
     t = df['x_axis']
     f = df['channel_2']
 
-    line_plot(data)
-    fft_plot(data)
-    fft_comparison_plot(data)
+    line_plot(filename)
+    fft_plot(filename)
+    fft_comparison_plot(filename)
