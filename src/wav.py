@@ -1,5 +1,5 @@
 #!/usr/bin/python
-
+from format_csv import csv_format
 import wave
 import struct
 import sys
@@ -39,7 +39,7 @@ if __name__ == "__main__":
         print("You must supply a filename to generate")
         exit(-1)
     for fname in sys.argv[1:]:
-
+        csv_format(fname)
         data = []
         for time, value in csv.reader(open(fname, 'U'), delimiter=','):
             try:
@@ -54,5 +54,8 @@ if __name__ == "__main__":
         arr /= numpy.max(numpy.abs(data))
         filename_head, extension = fname.rsplit(".", 1)
         data_resampled = resample(arr, len(data))
-        wavfile.write('rec.wav', 2000, data_resampled)  # resampling at 16khz
+        audio_filename = fname.replace("csv", "wav")
+        audio_filename = audio_filename.replace("data/", "")
+        wavfile.write(f'data/Audio/{audio_filename}',
+                      2000, data_resampled)  # resampling at 16khz
         print("File written succesfully !")
