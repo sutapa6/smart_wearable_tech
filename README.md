@@ -132,6 +132,20 @@ A line graph version of the same data can be seen below:
 
 ![](docs/line_scope_0.png)
 
+#### 3.2.2 Creating an audio file from the CSV Files
+
+- There exists a file names `wav.py` in `src` which takes a filename as a command argument and saves a .wav file of the data.
+
+- The way to run this program is as follows:
+
+```txt
+
+  python3 src/wav.py data/Lab_2/scope_0.csv
+
+```
+
+- The file is saved under `Audio`
+
 ## 4. Data Cleaning
 
 blah blah can do later, copy from Project Plan
