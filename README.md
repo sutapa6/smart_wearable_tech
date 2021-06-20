@@ -194,6 +194,18 @@ blah blah can do later, copy from Project Plan
     <td><b>filename</b></td>
     <td>string</td>
   </tr>
+   <tr>
+    <td><b>data</b></td>
+    <td>any</td>
+  </tr>
+  <tr>
+    <td><b>framerate</b></td>
+    <td>int</td>
+  </tr>
+  <tr>
+    <td><b>amplitude</b></td>
+    <td>int</td>
+  </tr>
 </table>
 
 ### 7.3 Functions
@@ -237,9 +249,20 @@ will have to do later but this is just random code on how to start a table. enjo
       </ul>
     </td> 
   </tr>
-   <tr>
+  <tr>
      <td><code>fft_comparison_plot</code><br /><br />Takes a csv file and plots a line graph, the FFT and the resulting inverse FFT.of the data given. It then saves this file under data/Plots/FFT_comparison_plots/Lab_{lab_num}/scope_{scope_num}.png. </td>
     <td><b>Parameters:</b><br /><code>filename</code><br /><br /><b>Return Type:</b><br /><code>None<code></td>
+    <td>
+      <b>InputError</b> when any of:
+      <ul>
+        <li>Filename entered is not a valid file</li>
+      </ul>
+    </td> 
+  </tr>
+    <tr>
+     <td><code>write_wav</code><br /><br />Takes a csv file and creates a .wav file. It then saves this file under data/Audio/Lab_{lab_num}/scope_{scope_num}.wav. </td>
+    <td><b>Parameters:</b><br />(<code>data</code><br />
+    <code>filename</code><br /> <code>framerate</code><br /><code>amplitude</code>)<br /> <b>Return Type:</b><br /><code>None<code></td>
     <td>
       <b>InputError</b> when any of:
       <ul>
