@@ -214,9 +214,39 @@ will have to do later but this is just random code on how to start a table. enjo
       <ul>
         <li>Filename entered is not a valid file</li>
       </ul>
-    </td>
+    </td> 
   </tr>
   <tr>
-  </table>
+     <td><code>line_plot</code><br /><br />Takes a csv file and plots a line graph based off the data given. It then 
+    saves this file under data/Plots/Lab_{lab_num}/scope_{scope_num}.png</td>
+    <td><b>Parameters:</b><br /><code>filename</code><br /><br /><b>Return Type:</b><br /><code>None<code></td>
+    <td>
+      <b>InputError</b> when any of:
+      <ul>
+        <li>Filename entered is not a valid file</li>
+      </ul>
+    </td> 
+  </tr>
+  <tr>
+     <td><code>fft_plot</code><br /><br />Takes a csv file and plots a the FFT of the data given. </td>
+    <td><b>Parameters:</b><br /><code>filename</code><br /><br /><b>Return Type:</b><br /><code>None<code></td>
+    <td>
+      <b>InputError</b> when any of:
+      <ul>
+        <li>Filename entered is not a valid file</li>
+      </ul>
+    </td> 
+  </tr>
+   <tr>
+     <td><code>fft_comparison_plot</code><br /><br />Takes a csv file and plots a line graph, the FFT and the resulting inverse FFT.of the data given. It then saves this file under data/Plots/FFT_comparison_plots/Lab_{lab_num}/scope_{scope_num}.png. </td>
+    <td><b>Parameters:</b><br /><code>filename</code><br /><br /><b>Return Type:</b><br /><code>None<code></td>
+    <td>
+      <b>InputError</b> when any of:
+      <ul>
+        <li>Filename entered is not a valid file</li>
+      </ul>
+    </td> 
+  </tr>
 
-link to google doc just in case this table thing does not work out: https://docs.google.com/document/d/1SIq7Kt2bmYPdOGgqtmAKAjPw-a_mt3PVh_RuykiMsfY/edit
+  <tr>
+  </table>

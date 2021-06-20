@@ -1,5 +1,4 @@
-import os
-import csv
+import pandas as pd
 
 
 def csv_format(filename: str):
@@ -19,6 +18,11 @@ def csv_format(filename: str):
 
         Return Value:
             None 
+    '''
+    f = pd.read_csv(filename)
+    keep_col = ['x_axis', 'channel_2']
+    new_f = f[keep_col]
+    new_f.to_csv(filename, index=False)
     '''
     r = csv.reader(open(filename))
     lines = list(r)
@@ -44,5 +48,5 @@ def csv_format(filename: str):
     # Writes new formatted csv to the file, ready for plotting
     writer = csv.writer(open(filename, 'w'))
     writer.writerows(lines)
-
+    '''
     pass
