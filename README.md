@@ -17,6 +17,7 @@
 - 09/06 Added General overview of the project
 - 13/06 Fast Fourier Transform information added, csv files moved to `data` directory with subdirectories corresponding to which set the data came from, support for importing added
 - 14/06 Added material from 21T2 Project Plan
+- 21/06 .wav file information added
 
 ## 1. Aims:
 
