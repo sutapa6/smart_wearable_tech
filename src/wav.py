@@ -56,6 +56,10 @@ if __name__ == "__main__":
         data_resampled = resample(arr, len(data))
         audio_filename = fname.replace("csv", "wav")
         audio_filename = audio_filename.replace("data/", "")
+        if 'Lab_1' in audio_filename:
+            sr = 2000  # Sampling rate of 2kHz for csv files with 6000 lines
+        elif 'Lab_3' in audio_filename:
+            sr = 300  # 300 Hz for csv files with 1200 lines
         wavfile.write(f'data/Audio/{audio_filename}',
-                      2000, data_resampled)  # resampling at 16khz
+                      sr, data_resampled)
         print("File written succesfully !")
