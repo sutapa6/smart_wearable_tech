@@ -17,6 +17,7 @@
 - 09/06 Added General overview of the project
 - 13/06 Fast Fourier Transform information added, csv files moved to `data` directory with subdirectories corresponding to which set the data came from, support for importing added
 - 14/06 Added material from 21T2 Project Plan
+- 21/06 .wav file information added
 
 ## 1. Aims:
 
@@ -123,8 +124,8 @@
   ```
 
   By changing the values of 'scope_num' and 'lab_num', specific csv files can be accessed and coresponding plots can be generated within a Jupyter notebook.
-  This will also save a high-quality png into the same directory as the 'scatter.py' file. This plot is generated \
-  from the matplotlib library and looks like the plot below
+  This will also save a high-quality png into the same directory as the 'scatter.py' file. This plot is generated from the matplotlib library and looks like  
+  the plot below
 
 ![](docs/scope_0.png)
 
