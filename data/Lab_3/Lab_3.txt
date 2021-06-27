@@ -1,0 +1,20 @@
+
+Date: 25/06/2021
+Location: Willis Annexe
+Attendees: Akira, Taylor, Megan
+
+File Mappings:
+
+scope_0.csv -> 
+scope_2.csv -> 
+scope_4.csv -> 
+scope_6.csv -> 
+scope_8.csv -> 
+scope_10.csv -> 
+scope_12.csv -> 
+scope_14.csv -> 
+scope_16.csv -> 
+scope_18.csv -> 
+scope_20.csv -> 
+scope_22.csv -> 
+scope_24.csv -> 
