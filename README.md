@@ -134,7 +134,17 @@ A line graph version of the same data can be seen below:
 
 ![](docs/line_scope_0.png)
 
-#### 3.2.2 Creating an audio file from the CSV Files
+#### 3.2.2 Creating a Spectrogram from CSV files
+
+- In the main directory there is a file named `spectrogram.ipynb` which plots the spectrogram of any of the Lab files.
+
+- An example plot is shown below
+
+![](docs/spectrogram.png)
+
+- This file is saved as a PNG under `data/Lab_{lab_num}/scope_{scope_num}.png`
+
+#### 3.2.3 Creating an audio file from the CSV Files
 
 - There exists a file names `wav.py` in `src` which takes a filename as a command argument and saves a .wav file of the data.
 
@@ -167,6 +177,16 @@ blah blah can do later, copy from Project Plan
 ![](docs/fft_sample.png)
 
 - However, it is in fact much easier to use the file `fft.ipynb` located in the `smart_wearable_tech` directory. This is a Jupyter Notebook, allowing for the division of code into small cells which can be individually run and debugged accordingly.
+
+### 4.2 Bandpass Filters
+
+- A Bandpass Filter filters a signal based off a given range of frequencies. This consists of a lower and upper bound; any frequency outside this given range is removed.
+
+#### 4.1.1 Implementing Bandpass Filters using Python
+
+- Located in the main directory is a file called `bandpass.ipynb`. This file takes any of the csv files obtained from the labs and outputs a plot of the original function and its filtered plot. An example is shown below.
+
+![](docs/bandpass.png)
 
 ## 5. Data Analysis
 
