@@ -30,6 +30,13 @@ def csv_format(filename: str):
     while f["channel_2"][i] != f["channel_2"][i]:
         f = f.drop([i], axis=0)
         i += 1
+    
+    # Convert negative timestamps
+    t = f['x_axis'][1]
+    if t < 0:
+        for i in range(1, len(f['x_axis']) +1):
+            f['x_axis'][i] += abs(t)
+    
 
     keep_col = ['x_axis', 'channel_2']
     new_f = f[keep_col]
@@ -38,8 +45,6 @@ def csv_format(filename: str):
     new_f.to_csv(filename, index=False)
 
     pass
-
-
 
 
 def csv_format(filename: str):
