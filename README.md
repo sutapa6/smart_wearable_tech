@@ -1,6 +1,6 @@
 # Smart Wearable Tech Software
 
-**🐍 Chunder's Crew 🐍**
+
 
 ## Contents
 

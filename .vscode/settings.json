@@ -1,3 +1,8 @@
 {
-    "python.analysis.extraPaths": ["./smart_wearable_tech/", "./smart_wearable_tech/data", "/smart_wearable_tech"]
+    "python.analysis.extraPaths": [
+        "./smart_wearable_tech/",
+        "./smart_wearable_tech/data",
+        "/smart_wearable_tech"
+    ],
+    "python.pythonPath": "/bin/python3"
 }
