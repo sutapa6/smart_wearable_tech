@@ -18,6 +18,10 @@
 - 21/06 .wav file information added
 - 28/06 Spectrogram and Bandpass Filter added
 
+## Questions for Academics
+
+- 
+
 ## Known Issues
 
 - `src.format_csv.csv_format` does not run when called in other files. If you run `format_csv.py` it runs properly though.
