@@ -1,7 +1,5 @@
 # Smart Wearable Tech Software
 
-
-
 ## Contents
 
 1. Aims
@@ -12,13 +10,17 @@
 6. Database
 7. Functions list
 
-## 0. Change Log
+## 0 Change Log
 
 - 09/06 Added General overview of the project
 - 13/06 Fast Fourier Transform information added, csv files moved to `data` directory with subdirectories corresponding to which set the data came from, support for importing added
 - 14/06 Added material from 21T2 Project Plan
 - 21/06 .wav file information added
 - 28/06 Spectrogram and Bandpass Filter added
+
+## Known Issues
+
+- `src.format_csv.csv_format` does not run when called in other files. If you run `format_csv.py` it runs properly though.
 
 ## 1. Aims:
 
@@ -242,6 +244,10 @@ blah blah can do later, copy from Project Plan
     <td><b>amplitude</b></td>
     <td>int</td>
   </tr>
+   <tr>
+    <td><b>signal</b></td>
+    <td>any</td>
+  </tr>
 </table>
 
 ### 7.3 Functions
@@ -303,6 +309,17 @@ will have to do later but this is just random code on how to start a table. enjo
       <b>InputError</b> when any of:
       <ul>
         <li>Filename entered is not a valid file</li>
+      </ul>
+    </td> 
+  </tr>
+  </tr>
+    <tr>
+     <td><code>band_pass_filter</code><br /><br />Takes a signal and applies a bandpass filter to it. Returns a filtered signal. </td>
+    <td><b>Parameters:</b><br />(<code>signal</code>)<br /> <b>Return Type:</b><br /><code>any<code></td>
+    <td>
+      <b>InputError</b> when any of:
+      <ul>
+        <li>Signal entered is not a valid file</li>
       </ul>
     </td> 
   </tr>
