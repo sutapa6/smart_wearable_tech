@@ -1,6 +1,6 @@
 # Data 📊
 
-This section describes how the team has organised our data and where to retrieve specific files and plots.
+This section describes how the team has organised our data and where to retrieve specific files and plots. blah blah blah
 
 ## Future Improvements
 
@@ -68,3 +68,45 @@ This section describes how the team has organised our data and where to retrieve
 
   - Spectrogram generated of raw data obtained from labs.
   - Source file: `spectrogram.ipynb`
+
+# Lab File Table
+
+- These are just temporary inclusions to the table, Lab 00 will actually be the next lab we have so we can propely acquire data in the format we settled on.
+- Feel free to play around with the table to learn how html tables work. Also, add any new keys (`Subject`, `Date` etc) to the `notes` section if you think it's appropriate.
+
+<table>
+  <tr>
+    <th>Lab Number</th>
+    <th>Sensor Number</th>
+    <th>Notes</th>
+  </tr>
+  <tr>
+    <td><br>Lab 00<br /><br />
+    <td><b>1,2,3</b>
+    <td>
+      <b>Subject:</b> Dave 
+      <br><b>Date:</b> 03/21 
+      <br><b>Words:</b> alpha,bravo,charlie,Zulu
+    </td>
+
+  </tr>
+    <tr>
+    <td><br>Lab 01<br /><br />
+    <td><b>1,2,3</b>
+    <td>
+      <b>Subject:</b> Andrew
+      <br><b>Date:</b> 03/27 
+      <br><b>Words:</b> alpha,bravo,charlie,Zulu
+    </td> 
+  </tr>
+    <tr>
+    <td><br>Lab 02<br /><br />
+    <td><b>1,2,3</b>
+    <td>
+      <b>Subject:</b> Akira
+      <br><b>Date:</b> 06/25 
+      <br><b>Words:</b> alpha,bravo,charlie,Zulu
+    </td> 
+  </tr>
+  
+</table>
