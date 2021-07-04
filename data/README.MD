@@ -71,75 +71,30 @@ This section describes how the team has organised our data and where to retrieve
 
 <table>
   <tr>
-    <th>Name & Description</th>
-    <th>Data Types</th>
-    <th>Exceptions</th>
+    <th>Lab Number</th>
+    <th>Sensor Number</th>
+    <th>Notes</th>
   </tr>
   <tr>
-    <td><code>csv_format</code><br /><br />Given a CSV filename, format the CSV in a way Matplotlib can plot.</td>
-    <td><b>Parameters:</b><br /><code>filename</code><br /><br /><b>Return Type:</b><br /><code>None<code></td>
+    <td>Lab 00<br /><br />
+    <td><b>1,2,3</b>
     <td>
-      <b>InputError</b> when any of:
-      <ul>
-        <li>Filename entered is not a valid file</li>
-      </ul>
-    </td> 
-  </tr>
-  <tr>
-     <td><code>line_plot</code><br /><br />Takes a csv file and plots a line graph based off the data given. It then 
-    saves this file under data/Plots/Lab_{lab_num}/scope_{scope_num}.png</td>
-    <td><b>Parameters:</b><br /><code>filename</code><br /><br /><b>Return Type:</b><br /><code>None<code></td>
-    <td>
-      <b>InputError</b> when any of:
-      <ul>
-        <li>Filename entered is not a valid file</li>
-      </ul>
-    </td> 
-  </tr>
-  <tr>
-     <td><code>fft_plot</code><br /><br />Takes a csv file and plots a the FFT of the data given. </td>
-    <td><b>Parameters:</b><br /><code>filename</code><br /><br /><b>Return Type:</b><br /><code>None<code></td>
-    <td>
-      <b>InputError</b> when any of:
-      <ul>
-        <li>Filename entered is not a valid file</li>
-      </ul>
-    </td> 
-  </tr>
-  <tr>
-     <td><code>fft_comparison_plot</code><br /><br />Takes a csv file and plots a line graph, the FFT and the resulting inverse FFT.of the data given. It then saves this file under data/Plots/FFT_comparison_plots/Lab_{lab_num}/scope_{scope_num}.png. </td>
-    <td><b>Parameters:</b><br /><code>filename</code><br /><br /><b>Return Type:</b><br /><code>None<code></td>
-    <td>
-      <b>InputError</b> when any of:
-      <ul>
-        <li>Filename entered is not a valid file</li>
-      </ul>
+      <b>Subject:</b> Dave
     </td> 
   </tr>
     <tr>
-     <td><code>write_wav</code><br /><br />Takes a csv file and creates a .wav file. It then saves this file under data/Audio/Lab_{lab_num}/scope_{scope_num}.wav. </td>
-    <td><b>Parameters:</b><br />(<code>data</code><br />
-    <code>filename</code><br /> <code>framerate</code><br /><code>amplitude</code>)<br /> <b>Return Type:</b><br /><code>None<code></td>
+    <td>Lab 01<br /><br />
+    <td><b>1,2,3</b>
     <td>
-      <b>InputError</b> when any of:
-      <ul>
-        <li>Filename entered is not a valid file</li>
-      </ul>
+      <b>Subject:</b> Andrew
     </td> 
-  </tr>
   </tr>
     <tr>
-     <td><code>band_pass_filter</code><br /><br />Takes a signal and applies a bandpass filter to it. Returns a filtered signal. </td>
-    <td><b>Parameters:</b><br />(<code>signal</code>)<br /> <b>Return Type:</b><br /><code>any<code></td>
+    <td>Lab 02<br /><br />
+    <td><b>1,2,3</b>
     <td>
-      <b>InputError</b> when any of:
-      <ul>
-        <li>Signal entered is not a valid file</li>
-      </ul>
+      <b>Subject:</b> Akira
     </td> 
   </tr>
-
-  <tr>
+  
   </table>
-
-
