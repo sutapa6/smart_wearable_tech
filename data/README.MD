@@ -1,6 +1,6 @@
 # Data 📊
 
-This section describes how the team has organised our data and where to retrieve specific files and plots.
+This section describes how the team has organised our data and where to retrieve specific files and plots. blah blah blah
 
 ## Future Improvements
 
@@ -68,3 +68,6 @@ This section describes how the team has organised our data and where to retrieve
 
   - Spectrogram generated of raw data obtained from labs.
   - Source file: `spectrogram.ipynb`
+
+
+
