@@ -1,7 +1,2 @@
 src/__pycache__/
-src/__pycache__/__init__.cpython-38.pyc
-src/__pycache__/format_csv.cpython-38.pyc
-.ipynb_checkpoints/bandpass2-checkpoint.ipynb
-.ipynb_checkpoints/librosa 2-checkpoint.ipynb
-.ipynb_checkpoints/librosa-checkpoint.ipynb
-.ipynb_checkpoints/spectrogram-checkpoint.ipynb
+.ipynb_checkpoints/
