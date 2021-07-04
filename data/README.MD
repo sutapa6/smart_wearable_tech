@@ -76,25 +76,29 @@ This section describes how the team has organised our data and where to retrieve
     <th>Notes</th>
   </tr>
   <tr>
-    <td>Lab 00<br /><br />
+    <td><br>Lab 00<br /><br />
     <td><b>1,2,3</b>
     <td>
-      <b>Subject:</b> Dave
-    </td> 
+      <b>Subject:</b> Dave 
+      <br><b>Date:</b> 03/21 
+    </td>
+
   </tr>
     <tr>
-    <td>Lab 01<br /><br />
+    <td><br>Lab 01<br /><br />
     <td><b>1,2,3</b>
     <td>
       <b>Subject:</b> Andrew
+      <br><b>Date:</b> 03/27 
     </td> 
   </tr>
     <tr>
-    <td>Lab 02<br /><br />
+    <td><br>Lab 02<br /><br />
     <td><b>1,2,3</b>
     <td>
       <b>Subject:</b> Akira
+      <br><b>Date:</b> 06/25 
     </td> 
   </tr>
   
-  </table>
+</table>
