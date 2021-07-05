@@ -13,6 +13,11 @@ This section describes how the team has organised our data and where to retrieve
 
   - Maybe something like `apple_07/25_AM.csv` ? Discuss on Sunday 07/04
 
+New Naming Convention
+(first two letters action/word)_(lab number)_(index in the lab)_(participant initials).csv
+![image](https://user-images.githubusercontent.com/86947727/124428855-85943f80-ddb0-11eb-904a-b73a5bbc6f6e.png)
+
+
 ## Audio 🔈
 
 - This directory contains the .wav files generated from csv data acquired during Labs.
